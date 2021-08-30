@@ -10,11 +10,11 @@ print(mylist[4])
 
 #Manipulating List Elements
 # Add element at the end of the list.
-mylist[7] <- "My New element"
+mylist[8] <- "My New element"
 print(mylist)
 
 # Remove the last element.
-mylist[7] <- NULL
+mylist[6] <- NULL
 print(mylist)
 
 # Update the 3rd Element.
