@@ -1,10 +1,10 @@
 # Create data for the graph.
-# Total of death cases caused by a coronavirus in top 5 states
-deaths<- c(43524, 41653, 37760, 26821, 21866)
-location <- c("New York", "California", "Texas", "Florida", "Pennsylvania")
+# Total of fully vaccinated students in the class of (110) students
+Vaccination_data<- c(75, 25, 10)
+category <- c("Fully Vaccinated", "At least 1 dose", "unvaccinated")
 
 # Plot the chart.
-pie(deaths, labels= deaths, main = "Total of death cases caused by a coronavirus in top 5 states", 
-    col = rainbow(length(x)))
-legend("topright", c("New York", "California", "Texas", "Florida", "Pennsylvania"), 
-       fill = rainbow(length(x)))
+pie(Vaccination_data, labels= Vaccination_data, main = "% of students fully vaccinated", 
+    col = rainbow(length(category)))
+legend("topright", category, 
+       fill = rainbow(length(category)))
