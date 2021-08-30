@@ -1,9 +1,10 @@
 # Create data for the graph.
-# Total of death cases caused by a coronavirus in top 5 states
-deaths<- c(43524, 41653, 37760, 26821, 21866)
-location <- c("New York", "California", "Texas", "Florida", "Pennsylvania")
+# Total of fully vaccinated students in the class of (110) students
+Vaccination_data<- c(75, 25, 10)
+category <- c("Fully Vaccinated", "At least 1 dose", "unvaccinated")
+
 
 # Plot the chart.
-barplot(deaths, names.arg= location, xlab="location",ylab="Cases",
-        main = "Total of death cases caused by a coronavirus in top 5 states", 
-        col = rainbow(length(x)))
+barplot(Vaccination_data, names.arg= category, xlab="Category",ylab="Number of student",
+        main = "% of students fully vaccinated", 
+        col = rainbow(length(category)))
